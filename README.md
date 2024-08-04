@@ -1,11 +1,6 @@
 <b>POST</b> /user/create <br>
 Создает нового пользователя <br>
-Параметры: email, password, name
-Возвращает JSON формата 
-`$data = {
-				"code" => 200,
-				"message"=> "successful"
-			}`
+Параметры: email, password, name <br>
 
 <b>POST</b> /user/update <br>
 Обновляет данные пользователя <br>
@@ -18,8 +13,8 @@
 
 <b>POST</b> /user/auth <br>
 Авторизация пользователя <br>
-Параметры: login, password
-Возвращает JSON формата 
+Параметры: login, password <br>
+Возвращает JSON формата  <br>
 `$data = {
 				"code" => 200,
 				"message"=> "successful", 
@@ -30,8 +25,8 @@
 			}`
 <b>GET</b> /user/get/{id} <br>
 Возвращает данные указанного пользователя <br>
-Параметры: id
-Возвращает JSON формата 
+Параметры: id <br>
+Возвращает JSON формата  <br>
 `$data = {
 				"code" => 200,
 				"message"=> "successful", 
@@ -43,13 +38,13 @@
             }
 			}`
 
-В случае успеха возвращает JSON
+В случае успеха возвращает JSON <br>
 `$data = {
 				"code" => 200,
 				"message"=> "successful"
 			}`
 
-В случае неудачи возвращает JSON
+В случае неудачи возвращает JSON <br>
    `$data = {
 				"code" => 200,
 				"message"=> [текст ошибки]
