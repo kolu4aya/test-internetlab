@@ -23,6 +23,7 @@
 					"id_session" => $id_session
 				}
 			}`
+   
 <b>GET</b> /user/get/{id} <br>
 Возвращает данные указанного пользователя <br>
 Параметры: id <br>
