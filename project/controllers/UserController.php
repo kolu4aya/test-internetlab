@@ -141,7 +141,7 @@
 				return;
 				
 			} 
-			
+
 			session_start();
 			$_SESSION['id_user'] = $is_user['id'];
 			$id_session = session_id(); 
@@ -161,6 +161,11 @@
 			$id = $params['id'];
 			$user = new User;
 			$user = $user -> getById($id);
+			$data = [
+				"code" => 200,
+				"message"=> "successful", 
+				'data' => $user
+			];
 			echo(json_encode($user, JSON_UNESCAPED_UNICODE));
 		}
 	}
